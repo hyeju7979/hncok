@@ -1,0 +1,101 @@
+/*
+ * basic : 
+	폰트 스타일
+	폰트 사이즈
+	컬러
+	로고
+ */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Kanit:wght@100;200;300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Titillium+Web:wght@200;300;400;600&display=swap');
+
+/* ************************************************************************************ */
+/* tag reset */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { 
+	margin:0; 
+	padding:0;
+}
+html { width:100%; height:100%; }
+body,code { 
+	font:0.75em Noto Sans KR,Verdana,Dotum,AppleGothic,sans-serif; 
+	color:#303538; 
+	background:#fff; 
+}
+li { list-style:none; }
+img,fieldset { border:none; vertical-align:top; max-width:100%; }
+table { width:100%; border:0; border-spacing:0; border-collapse:collapse; } 
+caption { display:none; }
+th,td { border:0; vertical-align:top; }
+button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; }
+a { text-decoration:none; color:#303538; }
+a:hover { text-decoration:none; }
+a:active { text-decoration:none; }
+hr.layout { display:none; }
+* {
+	box-sizing: border-box;
+	}
+img {
+	max-width:100%;
+	height:auto;
+}
+/* ************************************************************************************ */
+
+/* 폰트 스타일 */ 
+$family-style2: "Kanit";
+$family-style3: "Do Hyeon";
+$family-style4: "Titillium Web";
+
+/* 폰트 사이즈 */
+$small : 14px;
+$smaller : 16px;
+$x-small : 17px;
+$xx-small : 18px;
+$xxx-small : 22px;
+
+$medium : 24px;
+
+$large : 28px;
+$larger : 39px;
+$x-large : 56px;
+$xx-large : 84px;
+$xxx-large : 90px;
+
+$sizeData: 40;
+$weightData:9;
+
+:root {
+	@for $i from 1 through $sizeData {
+		--pixcel-#{$i} : #{$i}px;		
+	}
+
+	@for $i from 1 through $weightData {
+		--weight-#{$i * 100} : #{$i * 100};		
+	}
+}
+
+
+$lightblack: #303538;
+$mediumblack: #4b5258;
+$gray: #7f7f7f;
+$lightgray:#e2e9ee;
+$white: #fff;
+$color3: #746862;
+
+$first-point-color:#663399; /* 메인 포인트 컬러*/
+$second-point-color:#45bfb4; /* 서브 포인트 컬러*/
+$third-point-color:#6c72d5; /* 서브 포인트 컬러*/
+
+$color-no1: #e5846b;
+$color-no2: #7e57f2;
+$color-no3: #36abb5;
+$color-no4: #f2b09a;
+$color-no5: #718cff;
+$color-no6: #5c63e8;	
+
+$letter-spacing-miniunit:0.5px;       
+$view:none;
+
+$logo: url('../img/new22_logo.png');
+
+h4 {
+	font-size: $medium;
+}

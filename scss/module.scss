@@ -1,0 +1,292 @@
+/*
+ * module
+ */
+
+/* Syntactically Awesome Style Sheets */
+/* SCSS 규칙
+    Numbers: 숫자에 단위가 있거나 없습니다.
+    Strings: 문자에 따옴표가 있거나 없습니다.
+    Nulls: 속성값으로 null이 사용되면 컴파일하지 않습니다.
+    Lists: ()를 붙이거나 붙이지 않습니다.
+    Maps: ()를 꼭 붙여야 합니다.
+    중첩 안에서 & 키워드는 상위(부모) 선택자를 참조하여 치환.
+
+    $(변수) : 속성값; * 반복적으로 사용되는 값을 변수로 지정 *
+    @for(반복문) 
+    @if(조건문)
+*/
+@import 'basic', 'layout';
+
+// 타이틀
+.sectionTitle {
+    padding: {
+        top: 62px;
+        right: var(--pixcel-20);
+        bottom: 60px;
+        left: var(--pixcel-20);
+    }
+
+    text-align: center;
+    letter-spacing: $letter-spacing-miniunit;
+}
+
+@mixin theme-DarkBackground {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 1200px;
+	padding: 70px 0;
+	color: #fff;
+    background: #000;
+
+    .ly-columnCount {
+        align-items: start;
+        h3 {
+            font: {
+                size: $x-large;
+                weight: 400;
+            }
+        }
+        li {
+            text-align-last: end;
+            margin: {
+                right: 60px;
+                bottom: 60px;
+            }  
+            font: {
+                size: $xxx-small;
+                weight: 200;
+            }
+        }
+    }
+    .ly-column-left {
+        width:40%;
+    }
+    .ly-column-right {
+        width: 60%;
+        max-width: 1144px;
+    }
+}
+.theme-DarkBackground {
+    @include theme-DarkBackground;
+}
+.theme-DarkBackground {
+    strong {
+        font-size: $xxx-large;
+        text-decoration: underline;
+        text-decoration-thickness: from-font;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: $large;
+    }
+    li {
+        min-height: 318px;         
+    }
+}
+// 스핀 아이콘 : 기능
+.trend-icon {
+    position: absolute;
+    top: 54px;
+    right: 615px;
+    z-index: 100;
+    display: none;
+
+    h3 {
+        position: relative;
+        top: 74px;
+        z-index: 110;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
+
+.spin-trend-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    animation: spin-badge 6s linear infinite;
+    background: $first-point-color;
+
+    /*animation-name: rotate;  애니메이션 keyframe 이름을 설정 */
+    /*animation-duration: 0.7s;  애니메이션 움직임 시간 */
+    /*animation-iteration-count: infinite;  애니메이션 반복 횟수:무한 반복 */
+    /*animation-play-state: running;  애니메이션 진행 상태 */
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes spin-badge {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// 브랜드소개-대표 문구 : 기능
+#headdress {
+    position: relative;
+    top: 0;
+    left: 100px;
+	margin: auto;
+	width: auto;
+	padding: 80px 0;
+	filter: url(#threshold) blur(0.6px);
+
+    #text1, #text2 {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        user-select: none;
+        color: #fff;
+        font : {
+            family: $family-style3;
+            size: 120px;
+            weight: 100;
+        }       
+    }
+}
+
+// full background
+@mixin fullBackground {
+    width: 100%;
+    height: 1200px;
+    
+    background: {
+        size: cover;
+        repeat: no-repeat;
+    }
+}
+@mixin headline-small-text {
+    font: {
+        size: $medium;
+        weight: var(--weight-300);
+    }
+}
+
+  .bl-hexagon {
+    margin: 7vh auto;
+    padding: 7vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    background-color: $lightblack;
+    
+    h4 {
+        margin-bottom: 26px;
+    }
+    ul {
+        text-align: center;
+        -webkit-column-count: 6;
+        -moz-column-count: 6;
+        column-count: 6;
+    }
+    li {
+        position: relative;
+        display: contents;
+        text-align: center;
+        color: #fff;
+
+        .txt {
+            font-size: $xx-small;
+            font-weight: var(--weight-400);
+            letter-spacing: -0.05em;
+
+            width:300px;
+            margin:0 auto;
+        }
+    }
+  }
+  .hex {
+    width: 8vw;
+    height: calc(7vw*1.7430);
+    margin: 0 4.2vw;
+    position: relative;
+    overflow: hidden !important;
+    transform: rotate(90deg);
+  }
+  .hex-inner1 {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    overflow: hidden;
+  }
+  .hex-inner2 {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    background-size: cover !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-120deg);
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gray;
+    background-image: none;
+
+    span {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(330deg);
+        font-size: $xxx-small;
+        text-align: center;
+    }
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 260px;
+    height: 57px;
+
+    color: #fff;
+    letter-spacing: 0.01em;
+
+    background-color: #232323;
+    border: 2px solid #e9e7e7;
+    border-radius: 3px;
+    outline: 0;
+    transition: .25s;
+
+    font: {
+        size: $xx-small;
+        family: $family-style4;
+    }    
+    
+    &:hover {
+        color: #fff;
+        background-color: #313131;
+        border-color: rgba(49,49,49,1);
+        
+    }
+    &:focus {
+        border:0;
+        box-shadow: 0 0 0 5px rgb(182 231 228 / 45%);
+    }
+
+    button {
+        background: transparent;
+        color: #fff;
+        letter-spacing: 0.01em;
+        font: {
+            size: $xx-small;
+            family: $family-style4;
+        }    
+    }
+}

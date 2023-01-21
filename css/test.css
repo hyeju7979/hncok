@@ -1,0 +1,97 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    /* 
+    border:5px solid red;
+    transform:rotate(0deg); 
+    */
+
+    margin: 100px auto;
+}
+
+.clickEvent a {
+    font-size: 100px;
+    color:brown;
+}
+
+#controlBox {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: #803343;
+    transition: 0.5s;
+}
+
+/* 자바스크립트로 클래스 제어하기 */
+#wrap {
+    width: 500px;
+    height: 500px;
+    border:1px solid #000;
+    padding: 100px;
+    max-width: 100px auto;
+    box-sizing: border-box;
+}
+
+#wrap article {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    transition: 1s;
+}
+
+#wrap.on article {
+    background-color: hotpink;
+}
+
+/* 코드 패키징 */
+.codePackaging ul li {
+    color:gray;
+}
+.codePackaging ul li.on {
+    color:#000;
+    cursor: pointer;
+}
+.codePackaging section {
+    width: 300px;
+    height: 200px;
+    border:1px solid #888;
+    margin: 50px;
+    position: relative;
+    perspective:600px;
+}
+.codePackaging section article {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 50px;
+    opacity: 0;
+    transform: rotateY(-180deg);
+    transition: 0.5s;
+}
+.codePackaging section article.on {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+/*박스 활성화 일때 */
+section article.on {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  /* 박스 순서별로 배경색 지정 */
+  section article:nth-of-type(1) {
+    background: aqua;
+  }
+  section article:nth-of-type(2) {
+    background: hotpink;
+  }
+  section article:nth-of-type(3) {
+    background: orange;
+  }
+  

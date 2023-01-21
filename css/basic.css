@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*
+ * basic : 
+	폰트 스타일
+	폰트 사이즈
+	컬러
+	로고
+ */
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Kanit:wght@100;200;300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Titillium+Web:wght@200;300;400;600&display=swap");
+/* ************************************************************************************ */
+/* tag reset */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body, code {
+  font: 0.75em Noto Sans KR, Verdana, Dotum, AppleGothic, sans-serif;
+  color: #303538;
+  background: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+img, fieldset {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+th, td {
+  border: 0;
+  vertical-align: top;
+}
+
+button {
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #303538;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+hr.layout {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ************************************************************************************ */
+/* 폰트 스타일 */
+/* 폰트 사이즈 */
+:root {
+  --pixcel-1: 1px;
+  --pixcel-2: 2px;
+  --pixcel-3: 3px;
+  --pixcel-4: 4px;
+  --pixcel-5: 5px;
+  --pixcel-6: 6px;
+  --pixcel-7: 7px;
+  --pixcel-8: 8px;
+  --pixcel-9: 9px;
+  --pixcel-10: 10px;
+  --pixcel-11: 11px;
+  --pixcel-12: 12px;
+  --pixcel-13: 13px;
+  --pixcel-14: 14px;
+  --pixcel-15: 15px;
+  --pixcel-16: 16px;
+  --pixcel-17: 17px;
+  --pixcel-18: 18px;
+  --pixcel-19: 19px;
+  --pixcel-20: 20px;
+  --pixcel-21: 21px;
+  --pixcel-22: 22px;
+  --pixcel-23: 23px;
+  --pixcel-24: 24px;
+  --pixcel-25: 25px;
+  --pixcel-26: 26px;
+  --pixcel-27: 27px;
+  --pixcel-28: 28px;
+  --pixcel-29: 29px;
+  --pixcel-30: 30px;
+  --pixcel-31: 31px;
+  --pixcel-32: 32px;
+  --pixcel-33: 33px;
+  --pixcel-34: 34px;
+  --pixcel-35: 35px;
+  --pixcel-36: 36px;
+  --pixcel-37: 37px;
+  --pixcel-38: 38px;
+  --pixcel-39: 39px;
+  --pixcel-40: 40px;
+  --weight-100: 100;
+  --weight-200: 200;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-800: 800;
+  --weight-900: 900;
+}
+
+/* 메인 포인트 컬러*/
+/* 서브 포인트 컬러*/
+/* 서브 포인트 컬러*/
+h4 {
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=basic.css.map */
