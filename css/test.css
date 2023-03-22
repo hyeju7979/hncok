@@ -103,3 +103,23 @@ section article.on {
     margin: 30px;
     background-color: #6371af;
   }
+  .fullload {
+    width: 800px;
+    background: #eee;
+  }
+  .fullload div {
+    width: 600px;
+    border: 1px solid #000;
+  }
+  .fullload h2 {
+    font-size: 6em;
+  }
+  .fullload h3 {
+    font-size: 3em;
+    color: green;
+    font-weight: 100;
+  }
+  input[type=radio]:checked span {
+    color:#6371af;
+    font-weight: bold;
+  }
