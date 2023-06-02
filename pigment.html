@@ -6,105 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="css/local.css">
+    <link rel="stylesheet" href="css/pigment_basic.css">
     <style>
-        @charset "UTF-8";
-
-        /* tag reset */
-        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-        html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
-        margin: 0;
-        padding: 0;
-        }
-
-        html {
-        width: 100%;
-        height: 100%;
-        }
-
-        body, code {
-        font: 16px 'Lato', 'Noto Sans KR','Open Sans', Verdana, AppleGothic, sans-serif;
-        color: #303538;
-        background: #fff;
-        }
-        li {
-            list-style: none;
-        }
-        
-        img, fieldset {
-            border: none;
-            vertical-align: top;
-            max-width: 100%;
-        }
-        
-        table {
-            width: 100%;
-            border: 0;
-            border-spacing: 0;
-            border-collapse: collapse;
-        }
-        
-        caption {
-            display: none;
-        }
-        
-        th, td {
-            border: 0;
-            vertical-align: top;
-        }
-        
-        button {
-            overflow: visible;
-            padding: 0;
-            margin: 0;
-            border: 0;
-            cursor: pointer;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #303538;
-        }
-        
-        a:hover {
-            text-decoration: none;
-        }
-        
-        a:active {
-            text-decoration: none;
-        }
-        * {
+        /* 컨텐츠  **************************************************************************************************************************************************************************************************************************/
+        /* 햄버거 메뉴 */
+        .layout_sidebar {
+            margin: 60px 0 0 45px;
+            Width: 600px;
+            Height : 100vh;
+            border-right:1px solid var(--color_basic);
             box-sizing: border-box;
         }
-        
-        img {
-            max-width: 100%;
-            height: auto;
+        .spacing_row58 {
+            padding-bottom: 58px;
         }
-        
-
-
-
-        .wrap {
-            border:1px solid #d9d9d9;
+        .menu_main a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            text-transform: uppercase;
         }
-        header {
-            padding: 20px 0;
-            border-bottom: 1px solid #d9d9d9;
+        .menu_main p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            margin-left: 12px;
         }
-        h1 {
-            font-size: 60px;
-            text-align: center;
+        .menu_middle {
+            margin-left: 18px;
         }
-        aside {
-            width:300px;
-            height: 100vh;
-            border-right: 1px solid #d9d9d9;
-        }
-        aside ul {
-            padding-top: 50px;
-        }
-        aside li {
-            padding: 10px 20px;
+        .menu_middle a {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 32px;
         }
     </style>
 </head>
@@ -113,7 +48,7 @@
         <header>
             <h1>PIGMENT</h1>
         </header>
-        <div>
+        <div class="local_wrap_main">
             <aside>
                 <ul>
                     <li>슬라이드</li>
@@ -127,7 +62,47 @@
                 </ul>
             </aside>
             <main>
-                <div></div>
+                <div>
+                    <!-- 중분류 -->
+                    <div class="local_category_middle">
+                        <ul>
+                            <li>Style 1</li>
+                        </ul>
+                    </div>
+                   
+                    <!-- 컨텐츠 -->
+                    <div>
+                        <div class="layout_sidebar">
+                            <ul class="menu_main">
+                                <li><a href="#">신상 30%</a></li>
+                                <li><a href="#">BEST 50</a></li>
+                                <li><a href="#">UP TO 70~</a></li>
+                                <li class="spacing_row58"><a href="#" class="color_point1">투데이 특가</a></li>
+
+                                <li><a href="#">온라인 단독</a></li>
+                                <li><a href="#">오프라인 베스트</a></li>
+                                <li class="spacing_row58"><a href="#">PFS:GALLERY</a></li>
+
+                                <li>
+                                    <a href="#">STYLE</a>
+                                    <ul class="menu_middle">
+                                        <li><a href="#">TOP</a></li>
+                                        <li><a href="#">SHIRT/BLOUSE</a></li>
+                                        <li><a href="#">KNIT</a></li>
+                                        <li><a href="#">OUTER</a></li>
+                                        <li><a href="#">BOTTOM</a></li>
+                                        <li><a href="#">DRESS</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </li>
+                                <li class="spacing_row58"><a href="#">맘앤키즈</a></li>
+
+                                <li><a href="#">+ 안내</a></li>
+                                <li><a href="#">+ STORE <p>피그먼트 오프라인 매장 안내</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
         <footer></footer>
