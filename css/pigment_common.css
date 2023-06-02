@@ -7,3 +7,7 @@
 .color_point1 {
     color: var(--color_point1);
 }
+
+.hide {
+    display: none;
+}

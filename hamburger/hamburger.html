@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/local.css">
+    <link rel="stylesheet" href="css/pigment_basic.css">
+    <link rel="stylesheet" href="css/pigment_common.css">
+    <style>
+        /* 컨텐츠  **************************************************************************************************************************************************************************************************************************/
+        /* 햄버거 메뉴 */
+        .layout_sidebar {
+            position: relative;
+            padding: 60px 0 60px 45px;
+            Width: 600px;
+            Height : 100%;
+            border-right:1px solid var(--color_basic);
+            border:1px solid var(--color_basic);
+            box-sizing: border-box;
+        }
+        /* 닫힘 버튼 */
+        .btn_close {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: 30px;
+            top: 30px;
+        }
+        .spacing_row58 {
+            padding-bottom: 58px;
+        }
+        .menu_main a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+        .menu_main p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            margin-left: 12px;
+        }
+        .menu_middle {
+            margin-left: 18px;
+        }
+        .menu_middle a {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 32px;
+        }
+        /* 가로형 메뉴 */
+        .menu_middle_horizontal li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="local_wrap">
+        <header>
+            <h1>PIGMENT</h1>
+        </header>
+        <div class="local_wrap_main">
+            <aside>
+                <h1>PIGMENT</h1>
+                <ul>
+                    <li>슬라이드</li>
+                    <li>모달</li>
+                    <li>타임세일</li>
+                    <li>풀페이지</li>
+                    <li>캘린더</li>
+                    <li>레이아웃</li>
+                    <li><a href="#hamburger">햄버거 메뉴</a></li>
+                    <li><a href="#accordian">아코디언 메뉴</a></li>
+                </ul>
+            </aside>
+            <main class="local_container">
+                <h2>햄버거 메뉴</h2>
+                <div id="hamburger">
+                    <!-- 스타일은 아래와 같습니다.                    
+                    1. x 버튼 이용하여 창 닫힐 것
+                    2. 햄버거 영역 빈곳 아무데나 클릭하면 닫힐것
+                    3. 햄버거 영역 + 메인 영역 아무데나 클릭하면 닫힐것
+
+                    ※ 세로 스크롤을 추가할 수 있음
+                    -->
+
+                    <!-- 중분류 -->
+                    <div class="local_category_middle">
+                        <ul>
+                            <li>style 1 : X 버튼 없음</li>
+                            <li>style 2 : X 버튼 있음</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 컨텐츠 -->
+                    <div class="local_align">
+                        <!-- x 버트 없음 -->
+                        <div class="layout_sidebar local_parallel_list">                           
+                            <ul class="menu_main">
+                                <li><a href="#">신상 30%</a></li>
+                                <li><a href="#">BEST 50</a></li>
+                                <li><a href="#">UP TO 70~</a></li>
+                                <li class="spacing_row58"><a href="#" class="color_point1">투데이 특가</a></li>
+
+                                <li><a href="#">온라인 단독</a></li>
+                                <li><a href="#">오프라인 베스트</a></li>
+                                <li class="spacing_row58"><a href="#">PFS:GALLERY</a></li>
+
+                                <li>
+                                    <a href="#">STYLE</a>
+                                    <ul class="menu_middle spacing_row58">
+                                        <li><a href="#">TOP</a></li>
+                                        <li><a href="#">SHIRT/BLOUSE</a></li>
+                                        <li><a href="#">KNIT</a></li>
+                                        <li><a href="#">OUTER</a></li>
+                                        <li><a href="#">BOTTOM</a></li>
+                                        <li><a href="#">DRESS</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </li>
+                                <li class="spacing_row58"><a href="#">맘앤키즈</a></li>
+
+                                <li>
+                                    <a href="#">+ 안내</a>
+                                    <ul class="menu_middle menu_middle_horizontal hide">
+                                        <li><a href="#">NOTICE</a></li>
+                                        <li><a href="#">Q&A</a></li>
+                                        <li><a href="#">REVIEW</a></li>
+                                    </ul>
+                                    <ul class="menu_middle menu_middle_horizontal spacing_row58">
+                                        <li><a href="#">ORDER</a></li>
+                                        <li><a href="#">MY PAGE</a></li>
+                                        <li><a href="#">CART</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">+ STORE <p>피그먼트 오프라인 매장 안내</p></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- x 버트 있음 -->
+                        <div class="layout_sidebar local_parallel_list">
+                            <div class="btn_close"><img src="svg/hamburger_menu_close.svg" alt="닫힘 버튼" /></div>
+                            
+                            <ul class="menu_main">
+                                <li><a href="#">신상 30%</a></li>
+                                <li><a href="#">BEST 50</a></li>
+                                <li><a href="#">UP TO 70~</a></li>
+                                <li class="spacing_row58"><a href="#" class="color_point1">투데이 특가</a></li>
+
+                                <li><a href="#">온라인 단독</a></li>
+                                <li><a href="#">오프라인 베스트</a></li>
+                                <li class="spacing_row58"><a href="#">PFS:GALLERY</a></li>
+
+                                <li>
+                                    <a href="#">STYLE</a>
+                                    <ul class="menu_middle spacing_row58">
+                                        <li><a href="#">TOP</a></li>
+                                        <li><a href="#">SHIRT/BLOUSE</a></li>
+                                        <li><a href="#">KNIT</a></li>
+                                        <li><a href="#">OUTER</a></li>
+                                        <li><a href="#">BOTTOM</a></li>
+                                        <li><a href="#">DRESS</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </li>
+                                <li class="spacing_row58"><a href="#">맘앤키즈</a></li>
+
+                                <li>
+                                    <a href="#">+ 안내</a>
+                                    <ul class="menu_middle menu_middle_horizontal">
+                                        <li><a href="#">NOTICE</a></li>
+                                        <li><a href="#">Q&A</a></li>
+                                        <li><a href="#">REVIEW</a></li>
+                                    </ul>
+                                    <ul class="menu_middle menu_middle_horizontal spacing_row58">
+                                        <li><a href="#">ORDER</a></li>
+                                        <li><a href="#">MY PAGE</a></li>
+                                        <li><a href="#">CART</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">+ STORE <p>피그먼트 오프라인 매장 안내</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer></footer>
+    </div>   
+</body>
+</html>
