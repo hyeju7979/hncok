@@ -1,0 +1,38 @@
+.local_wrap {
+    border:1px solid #d9d9d9;
+}
+.local_header {
+    padding: 20px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+.local_h1 {
+    font-size: 60px;
+    text-align: center;
+}
+.local_aside {
+    width:300px;
+    height: 100vh;
+    border-right: 1px solid #d9d9d9;
+}
+.local_aside ul {
+    padding-top: 50px;
+}
+.local_aside li {
+    padding: 10px 20px;
+}
+
+.local_wrap_main {
+    display: flex;
+}
+
+/* 중분류 */
+.local_category_middle {
+    margin: 20px;
+}
+.local_category_middle li {
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
