@@ -1,0 +1,54 @@
+/* 햄버거 메뉴 */
+.layout_sidebar {
+    position: relative;
+    padding: 60px 0 60px 45px;
+    Width: 600px;
+    Height : 100%;
+    border-right:1px solid var(--color_basic);
+    border:1px solid var(--color_basic);
+    box-sizing: border-box;
+}
+/* 닫힘 버튼 */
+.btn_close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 30px;
+    top: 30px;
+}
+.spacing_row58 {
+    padding-bottom: 58px;
+}
+.menu_main a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.menu_main p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 12px;
+}
+.menu_middle {
+    margin-left: 18px;
+}
+.menu_middle a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+}
+/* 가로형 메뉴 */
+.menu_middle_horizontal li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
+/* 로컬용 입니다. */
+.layout_sidebar {
+    width:300px;
+    border-color:#ddd;
+}
