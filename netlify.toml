@@ -3,5 +3,5 @@ publish = "/"
 
 [[redirects]]
 from = "/"
-to = "/Main.html"
+to = "/main.html"
 status = 200
